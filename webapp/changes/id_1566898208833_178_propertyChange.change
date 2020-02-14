@@ -1,0 +1,42 @@
+{
+	"fileName": "id_1566898208833_178_propertyChange",
+	"fileType": "change",
+	"changeType": "propertyBindingChange",
+	"moduleName": "",
+	"reference": "aatest.Component",
+	"packageName": "$TMP",
+	"content": {
+		"property": "visible",
+		"newBinding": "{= ${NumberOfOccurrences} > 0 }"
+	},
+	"selector": {
+		"id": "aatest::sap.suite.ui.generic.template.ObjectPage.view.Details::ZZZC_RecurringTmpl--LINEFAC6::Section",
+		"type": "sap.uxap.ObjectPageSection",
+		"idIsLocal": false
+	},
+	"layer": "VENDOR",
+	"texts": {},
+	"namespace": "apps/aatest/changes/",
+	"projectId": "aatest",
+	"creation": "2019-08-27T09:30:14.711Z",
+	"originalLanguage": "EN",
+	"conditions": {},
+	"context": "",
+	"support": {
+		"generator": "Change.createInitialFileContent",
+		"service": "",
+		"user": "",
+		"sapui5Version": "1.69.1",
+		"sourceChangeFileName": "",
+		"compositeCommand": ""
+	},
+	"oDataInformation": {},
+	"dependentSelector": {},
+	"validAppVersions": {
+		"creation": "${project.version}",
+		"from": "${project.version}",
+		"to": "${project.version}"
+	},
+	"jsOnly": false,
+	"variantReference": ""
+}

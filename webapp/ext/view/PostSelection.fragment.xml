@@ -1,0 +1,85 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:smartform="sap.ui.comp.smartform"
+	xmlns:smartfield="sap.ui.comp.smartfield"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core" >
+	<Dialog id = "postSelection" title="{i18n>postSelectionTitle}" class="sapUiResponsiveContentPadding">
+		<!--VBox id="popUp1">
+		
+			<Toolbar id="toolbar1" design="Transparent" >
+				<content>
+					<Text text="{i18n>postSelectionDialogBar}" id="toolbarText" />
+					<ToolbarSpacer />
+				</content>
+			</Toolbar>
+			
+			<f:SimpleForm id="SimpleFormChange471" editable="true"
+			layout="ResponsiveGridLayout"
+			title="Address"
+			labelSpanXL="4"
+			labelSpanL="4"
+			labelSpanM="4"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="1"
+			emptySpanL="1"
+			emptySpanM="1"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+				<f:content>
+					<Label text="Up to Date" />
+					<Input id="upToDate" type="Date"/>
+				</f:content>	
+			</f:SimpleForm>
+		</VBox-->
+		
+		<content>
+			<Label text="{i18n>upToDate}" labelFor="DTI1"/>
+			<DatePicker
+				id="upToDate"
+				value="01/08/2019"
+				width="200px"
+				class="sapUiSmallMarginBottom" />
+		</content>
+		<MessageStrip
+				text="{i18n>popupMsg}"
+				type="Information"
+				showCloseButton="true"
+				class="sapUiMediumMarginBottom">
+				<link>
+					<Link text="{i18n>more}"
+						press=".onCloseDialog" />
+				</link>
+		</MessageStrip>
+		<content>
+			<Label text="{i18n>PostDateOption}"/>
+			<RadioButtonGroup id="RB1" columns="1" width="100%" class="sapUiSmallMarginBottom">
+				<buttons>
+					<RadioButton id="RB1-1" text="{i18n>radio1}" selected="true"/>
+					<RadioButton id="RB1-2" text="{i18n>radio2}" selected="false" enabled="false"/>
+				</buttons>
+			</RadioButtonGroup>
+		</content>
+		<content>
+			<Label text="{i18n>correctDate}" labelFor="DTI2"/>
+			<DatePicker
+				id="DTI2"
+				value="01/08/2019"
+				width="200px"
+				editable="false"
+				class="sapUiSmallMarginBottom" />
+		</content>
+		
+		<beginButton>
+			<Button	text="{i18n>dialogOkButtonText}"	press=".onClickActionPostInvoice"/>
+		</beginButton>
+		<endButton>
+			<Button	text="{i18n>dialogCloseButtonText}"	press=".onCloseDialog"/>
+		</endButton>
+		
+	</Dialog>
+</core:FragmentDefinition>

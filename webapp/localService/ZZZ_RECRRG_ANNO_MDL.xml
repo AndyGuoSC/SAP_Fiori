@@ -1,0 +1,185 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+	<edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='LOCAL')/$value"><edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/></edmx:Reference>
+	<edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='LOCAL')/$value"><edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/></edmx:Reference>
+	<edmx:Reference
+		Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='LOCAL')/$value"><edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/></edmx:Reference>
+	<edmx:Reference Uri="../../../sap/zzz_recrrg_srv/$metadata"><edmx:Include Namespace="ZZZ_RECRRG_SRV" Alias="SAP"/></edmx:Reference>
+	<edmx:DataServices>
+		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="zzz_recrrg_anno_mdl.v1">
+			<Annotations Target="ZZZ_RECRRG_SRV.I_DraftAdministrativeDataType/DraftUUID"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.I_DraftAdministrativeDataType/DraftEntityType"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.I_DraftAdministrativeDataType/DraftAccessType"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.I_DraftAdministrativeDataType/ProcessingStartDateTime"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.I_DraftAdministrativeDataType/DraftIsKeptByUser"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.I_DraftAdministrativeDataType/EnqueueStartDateTime"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.I_DraftAdministrativeDataType/DraftIsCreatedByMe"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.I_DraftAdministrativeDataType/DraftIsLastChangedByMe"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.I_DraftAdministrativeDataType/DraftIsProcessedByMe"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.I_DraftAdministrativeDataType/CreatedByUserDescription"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.I_DraftAdministrativeDataType/LastChangedByUserDescription"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.I_DraftAdministrativeDataType/InProcessByUserDescription"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.ZZZC_InvcHeaderType">
+				<Annotation Term="UI.HeaderInfo">
+					<Record><PropertyValue Property="TypeName" String="Source Invoice"/><PropertyValue Property="TypeNamePlural" String="Source Invoice"/>
+						<PropertyValue Property="Title">
+							<Record Type="UI.DataField"><PropertyValue Property="Value" Path="SupplierInvoice"/></Record>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.Identification">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="SupplierInvoice"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="FiscalYear"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="CompanyCode"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="AccountingDocumentType"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="DocumentHeaderText"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="InvoiceGrossAmount"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="ExchangeRate"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="InvoicingParty"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.LineItem">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="FiscalYear"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="CompanyCode"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="AccountingDocumentType"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="DocumentHeaderText"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="InvoiceGrossAmount"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="InvoicingParty"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="ExchangeRate"/></Record>
+					</Collection>
+				</Annotation><Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextLast"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.ZZZC_RecrrgTmplForcastType/HasDraftEntity"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.ZZZC_RecrrgTmplForcastType/ActiveUUID"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.ZZZC_RecrrgTmplForcastType/DraftEntityCreationDateTime"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.ZZZC_RecrrgTmplForcastType/DraftEntityLastChangeDateTime"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.ZZZC_RecrrgTmplForcastType/HasActiveEntity"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.ZZZC_RecrrgTmplForcastType/IsActiveEntity"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.ZZZC_RecrrgTmplForcastType/Preparation_ac"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.ZZZC_RecrrgTmplForcastType/Validation_ac"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.ZZZC_RecrrgTmplForcastType">
+				<Annotation Term="UI.HeaderInfo">
+					<Record><PropertyValue Property="TypeName" String="Posting Forcast"/><PropertyValue Property="TypeNamePlural" String="Posting Forcasts"/>
+						<PropertyValue Property="Title">
+							<Record Type="UI.DataField"><PropertyValue Property="Value" Path="RecrrgInvcForcastItemNmbr"/></Record>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.Identification">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="RecrrgInvcForcastItemNmbr"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="RecrrgInvcForcastPostSts"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="RecrrgInvcForcastPostDate"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="InvoiceDocumentNumber"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="TotalGrossAmountInTransCrcy"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.LineItem">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="RecrrgInvcForcastItemNmbr"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="RecrrgInvcForcastPostSts"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="RecrrgInvcForcastPostDate"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="InvoiceDocumentNumber"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="TotalGrossAmountInTransCrcy"/></Record>
+					</Collection>
+				</Annotation><Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextLast"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.ZZZC_RecurringTmplType/HasDraftEntity"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.ZZZC_RecurringTmplType/ActiveUUID"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.ZZZC_RecurringTmplType/DraftEntityCreationDateTime"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.ZZZC_RecurringTmplType/DraftEntityLastChangeDateTime"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.ZZZC_RecurringTmplType/HasActiveEntity"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.ZZZC_RecurringTmplType/IsActiveEntity"><Annotation Term="UI.HiddenFilter"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.ZZZC_RecurringTmplType/Activation_ac"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.ZZZC_RecurringTmplType/Edit_ac"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.ZZZC_RecurringTmplType/Preparation_ac"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.ZZZC_RecurringTmplType/Validation_ac"><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZZZ_RECRRG_SRV.ZZZC_RecurringTmplType">
+				<Annotation Term="UI.Facets">
+					<Collection>
+						<Record Type="UI.CollectionFacet"><PropertyValue Property="Label" String="Template Header"/><PropertyValue Property="ID" String="COLLFAC1"/>
+							<PropertyValue Property="Facets">
+								<Collection>
+									<Record Type="UI.ReferenceFacet"><PropertyValue Property="Label" String=""/><PropertyValue Property="ID" String="header"/><PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#header"/></Record>
+								</Collection>
+							</PropertyValue>
+						</Record>
+						<Record Type="UI.ReferenceFacet"><PropertyValue Property="Label" String="Invoice Source"/><PropertyValue Property="ID" String="LINEFAC2"/><PropertyValue Property="Target" AnnotationPath="to_InvcHeader/@UI.LineItem"/></Record>
+						<Record Type="UI.CollectionFacet"><PropertyValue Property="Label" String="Recurrence"/><PropertyValue Property="ID" String="COLLFAC5"/>
+							<PropertyValue Property="Facets">
+								<Collection>
+									<Record Type="UI.ReferenceFacet"><PropertyValue Property="Label" String="recurring pattern"/><PropertyValue Property="ID" String="re"/><PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#re"/></Record>
+								</Collection>
+							</PropertyValue>
+						</Record>
+						<Record Type="UI.ReferenceFacet"><PropertyValue Property="Label" String="Postings"/><PropertyValue Property="ID" String="LINEFAC6"/><PropertyValue Property="Target" AnnotationPath="to_Forcast/@UI.LineItem"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.FieldGroup" Qualifier="header">
+					<Record>
+						<PropertyValue Property="Data">
+							<Collection>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="SupplierInvoice"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PostingFiscalYear"/></Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.FieldGroup" Qualifier="re">
+					<Record>
+						<PropertyValue Property="Data">
+							<Collection>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="FirstOccurrenceDate"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="RecurrenceType"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="RecurrenceFrequency"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="OccurrenceType"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="RecurrenceEndType"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="NumberOfOccurrences"/></Record>
+								<Record Type="UI.DataField"><PropertyValue Property="Value" Path="LastOccurrenceDate"/></Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.HeaderInfo">
+					<Record><PropertyValue Property="TypeName" String="Recurring Supplier Invoice"/><PropertyValue Property="TypeNamePlural" String="Recurring Supplier Invoice"/>
+						<PropertyValue Property="Title">
+							<Record Type="UI.DataField"><PropertyValue Property="Label" String="Recurring Supplier Invoices"/><PropertyValue Property="Value" Path="RecrrgInvcTmplDocNmbr"/></Record>
+						</PropertyValue>
+						<PropertyValue Property="Description">
+							<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PostingFiscalYear"/></Record>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.Identification">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="CompanyCode"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="AccountingDocumentType"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="AccountingDocumentHeaderText"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="TotalGrossAmountInTransCrcy"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="Supplier"/><Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.LineItem">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="RecrrgInvcTmplDocNmbr"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="TmplStatusText"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="Supplier"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="NextOccurrenceDate"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="AccountingDocumentType"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="AccountingDocumentHeaderText"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="CompanyCode"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="TotalGrossAmountInTransCrcy"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="PostedToTotalAcctgDocsRatio"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.SelectionFields">
+					<Collection>
+						<PropertyPath>RecrrgInvcTmplDocNmbr</PropertyPath>
+						<PropertyPath>TmplStatusText</PropertyPath>
+						<PropertyPath>Supplier</PropertyPath>
+						<PropertyPath>NextOccurrenceDate</PropertyPath>
+						<PropertyPath>CompanyCode</PropertyPath>
+					</Collection>
+				</Annotation><Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextLast"/></Annotations>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
